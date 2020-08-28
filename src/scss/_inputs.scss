@@ -1,0 +1,6 @@
+/* INPUTS ------------------------------------ */
+input {
+  @include spacy;
+  @include rounded;
+  color: black;
+}

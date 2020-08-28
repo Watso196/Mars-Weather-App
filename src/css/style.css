@@ -1,0 +1,89 @@
+/* BASE ------------------------------------ */
+body,
+button,
+input,
+label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1em;
+  color: #eee;
+}
+
+h1 {
+  font-family: "Major Mono Display", sans-serif;
+  font-size: 2em;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: "Major Mono Display", sans-serif;
+  font-size: 1.5em;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+}
+
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.33em;
+  font-weight: 500;
+}
+
+/* CONTAINERS ------------------------------------ */
+body {
+  background-color: #000;
+  background-image: url(http://www.script-tutorials.com/demos/360/images/stars.png);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.section {
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+header label {
+  display: block;
+  text-align: center;
+  margin: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row article {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+form {
+  margin: 15px;
+  padding: 10px;
+}
+
+/* BUTTONS ------------------------------------ */
+button {
+  display: inline-block;
+  flex-grow: 1;
+  margin: 15px;
+  padding: 10px;
+}
+
+/* INPUTS ------------------------------------ */
+input {
+  margin: 15px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

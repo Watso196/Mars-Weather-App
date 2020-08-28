@@ -1,0 +1,31 @@
+/* BASE ------------------------------------ */
+body,
+button,
+input,
+label {
+  font-family: $font-body-stack;
+  font-size: 1.1em;
+  color: $white;
+}
+
+h1 {
+  font-family: $font-heading-stack;
+  font-size: 2em;
+  @include text-block;
+}
+
+h2 {
+  font-family: $font-heading-stack;
+  font-size: 1.5em;
+  @include text-block;
+}
+
+h3 {
+  font-family: $font-body-stack;
+  font-size: 1.33em;
+  font-weight: 500;
+}
+
+label {
+  font-weight: bold;
+}
