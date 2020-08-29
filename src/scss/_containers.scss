@@ -11,6 +11,13 @@ body {
   margin: 0 auto;
   position: relative;
   text-align: center;
+  .paragraph {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    background-color: change-color(black, $alpha: 0.5);
+    border-radius: 10px;
+  }
 }
 
 .section {
@@ -37,8 +44,12 @@ header {
     flex-grow: 1;
     background-color: change-color(
       $color: $color-background-secondary,
-      $alpha: 0.5
+      $alpha: 0.75
     );
+    h3,
+    p {
+      background-color: transparent;
+    }
   }
 }
 

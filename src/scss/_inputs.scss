@@ -2,5 +2,27 @@
 input {
   @include spacy;
   @include rounded;
+  background-color: change-color($white, $alpha: 0.75);
+  @include background-trans {
+    &:hover,
+    &:focus {
+      background-color: $white;
+    }
+  }
   color: black;
+  &::placeholder {
+    color: black;
+  }
+}
+
+/* BUTTONS ------------------------------------ */
+button {
+  display: inline-block;
+  flex-grow: 1;
+  @include spacy;
+  background-color: $color-secondary;
+  color: black;
+  border: none;
+  @include rounded;
+  @include background-trans;
 }

@@ -7,7 +7,11 @@ $padding: 10px;
 $color-background: #000;
 $color-background-secondary: #2e202c;
 $color-primary: #5c5566;
-$color-secondary: #80a1a3;
+$color-secondary: change-color(
+  $color: #80a1a3,
+  $lightness: 60%,
+  $alpha: 0.75,
+);
 $color-highlight: #8ad1a9;
 $white: #eee;
 

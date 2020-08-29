@@ -16,6 +16,11 @@
   border-radius: 10px;
 }
 
-@mixin button-transition {
-  transition: box-shadow 0.5s;
+@mixin background-trans {
+  transition: background-color 0.5s;
+  &:hover,
+  &:focus {
+    background-color: $color-highlight;
+  }
+  @content;
 }

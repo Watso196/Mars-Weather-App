@@ -4,28 +4,38 @@ button,
 input,
 label {
   font-family: $font-body-stack;
-  font-size: 1.1em;
+  font-size: 1.15em;
   color: $white;
 }
 
 h1 {
   font-family: $font-heading-stack;
-  font-size: 2em;
+  font-size: 1.9em;
   @include text-block;
 }
 
 h2 {
   font-family: $font-heading-stack;
-  font-size: 1.5em;
+  font-size: 1.4em;
   @include text-block;
 }
 
 h3 {
   font-family: $font-body-stack;
-  font-size: 1.33em;
+  font-size: 1.3em;
   font-weight: 500;
 }
 
 label {
   font-weight: bold;
+}
+
+body,
+label,
+h1,
+h2,
+h3,
+p {
+  background-color: rgba(black, 0.75);
+  border-radius: 10px;
 }
