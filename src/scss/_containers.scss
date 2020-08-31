@@ -55,4 +55,14 @@ header {
 
 form {
   @include spacy;
+  z-index: 5;
+}
+
+.info {
+  display: none;
+}
+
+.visible {
+  animation: info-grow 0.75s;
+  display: block;
 }

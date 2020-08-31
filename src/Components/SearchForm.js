@@ -1,10 +1,15 @@
 import React from "react";
 
-const SearchForm = () => {
+const SearchForm = (props) => {
   return (
-    <form>
+    <form onSubmit={props.weatherSearch}>
       <label htmlFor="search">Enter Your Location</label>
-      <input id="search" type="text" placeholder="Your location..." />
+      <input
+        id="search"
+        type="text"
+        placeholder="Your city..."
+        onChange={props.searchTermChange}
+      />
       <button type="submit">Go</button>
     </form>
   );

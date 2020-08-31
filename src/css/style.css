@@ -4,30 +4,46 @@ button,
 input,
 label {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.15em;
   color: #eee;
 }
 
 h1 {
   font-family: "Major Mono Display", sans-serif;
-  font-size: 2em;
+  font-size: 1.9em;
   display: block;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 35px;
+  margin: 0;
 }
 
 h2 {
   font-family: "Major Mono Display", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
   display: block;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 35px;
+  margin: 0;
 }
 
 h3 {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.33em;
+  font-size: 1.3em;
   font-weight: 500;
+}
+
+label {
+  font-weight: bold;
+}
+
+body,
+label,
+h1,
+h2,
+h3,
+p {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
 
 /* CONTAINERS ------------------------------------ */
@@ -43,6 +59,13 @@ body {
   margin: 0 auto;
   position: relative;
   text-align: center;
+}
+.container .paragraph {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .section {
@@ -64,12 +87,49 @@ header label {
   display: inline-block;
   margin: 15px;
   padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
   flex-grow: 1;
+  background-color: rgba(46, 32, 44, 0.75);
+}
+.row article h3,
+.row article p {
+  background-color: transparent;
 }
 
 form {
   margin: 15px;
   padding: 10px;
+  z-index: 5;
+}
+
+.info {
+  display: none;
+}
+
+.visible {
+  animation: info-grow 0.75s;
+  display: block;
+}
+
+/* INPUTS ------------------------------------ */
+input {
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: rgba(238, 238, 238, 0.75);
+  transition: background-color 0.5s;
+  color: black;
+}
+input:hover, input:focus {
+  background-color: #8ad1a9;
+}
+input:hover, input:focus {
+  background-color: #eee;
+}
+input::placeholder {
+  color: black;
 }
 
 /* BUTTONS ------------------------------------ */
@@ -78,12 +138,29 @@ button {
   flex-grow: 1;
   margin: 15px;
   padding: 10px;
+  background-color: rgba(137, 167, 169, 0.75);
+  color: black;
+  border: none;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+button:hover, button:focus {
+  background-color: #8ad1a9;
 }
 
-/* INPUTS ------------------------------------ */
-input {
-  margin: 15px;
-  padding: 10px;
+@keyframes info-grow {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  75% {
+    height: auto;
+  }
+  100% {
+    opacity: 1;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
